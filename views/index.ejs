@@ -1,4 +1,40 @@
 <%- contentFor('head') %>
-
+<link rel="stylesheet" type="text/css" href="stylesheets/css/index.css"/>
 <%- contentFor('body') %>
-<h1>Paige</h1>
+<svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="mobile-menu" viewBox="0 0 1024 1024">
+    <title>menu</title>
+    <path class="path1" d="M64 192h896v192h-896zM64 448h896v192h-896zM64 704h896v192h-896z"></path>
+</symbol>
+</defs>
+</svg>
+
+
+<header>
+    <div class="rmm" data-menu-title = "Photos By Paige">
+        <ul>
+            <li><a href='#home'>Home</a></li>
+            <li><a href='#about-me'>About Paige</a></li>
+            <li><a href='#about-me'>Portfolio</a></li>
+            <li><a href='#about-me'>Pricing</a></li>
+        </ul>
+    </div>
+</header>
+
+<div id="main-body">
+    <div class="rotating-image-div">
+        <img id="rotating-image" src="/images/KVWebsite.jpg" alt="Paige photo"/>
+    </div>
+    <div class="body-text">
+        <div class="section">
+            <p class="bold">Hi, I'm Paige!</p>
+            <p class="small-text">I am an independent photographer from Mountain View, CA.</p>
+        </div>
+        <div class="section">
+            <p class="small-text">Please feel free to reach out at:</p>
+            <p class="small-text">15pvermeer@gmail.com</p>
+            <p class="small-text">650-417-5616</p>
+        </div>
+    </div>
+</div>

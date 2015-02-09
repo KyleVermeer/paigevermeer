@@ -1,17 +1,3 @@
-header {
-  width: 100%;
-  background-color: #add8e6;
-  height: 60px;
-}
-#headerLabel {
-  text-align: left;
-  margin-left: 5%;
-  font-size: 20px;
-  line-height: 60px;
-  color: #000080;
-  font-family: 'Petit Formal Script', cursive;
-  float: left;
-}
 #main-body {
   width: 100%;
 }
@@ -21,49 +7,4 @@ header {
 #rotating-image {
   width: 100%;
   height: auto;
-}
-#icon-menu {
-  float: right;
-  margin-right: 5%;
-  height: 100%;
-}
-.icon {
-  display: inline-block;
-  color: #444444;
-  fill: currentColor;
-  height: 50%;
-  float: right;
-  width: 32px;
-  margin-top: 40%;
-}
-.body-text {
-  font-family: Lato, 'sans-seriff';
-  font-weight: 300;
-  color: #565656;
-  margin-left: 7%;
-  margin-right: 7%;
-  padding-top: 5%;
-}
-.body-text p {
-  margin-top: 4%;
-  text-align: center;
-  font-size: 1.5em;
-}
-.section {
-  padding-bottom: 7%;
-  padding-top: 3%;
-  border-bottom: 1px solid #AAAAAA;
-}
-.section:last-child {
-  border-bottom: none;
-}
-.bold {
-  font-weight: 700;
-}
-p.small-text {
-  line-height: 1.2em;
-  font-size: 1.15em;
-}
-.spaceholder {
-  clear: both;
 }

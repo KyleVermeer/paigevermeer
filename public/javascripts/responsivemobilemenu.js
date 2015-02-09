@@ -10,14 +10,14 @@ License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
 
 */
 
-function responsiveMobileMenu() {	
+function responsiveMobileMenu() {
 		$('.rmm').each(function() {
-			
-			
-			
+
+
+
 			$(this).children('ul').addClass('rmm-main-list');	// mark main menu list
-			
-			
+
+
 			var $style = $(this).attr('data-menu-style');	// get menu style
 				if ( typeof $style == 'undefined' ||  $style == false )
 					{
@@ -26,32 +26,33 @@ function responsiveMobileMenu() {
 				else {
 						$(this).addClass($style);
 					}
-					
-					
+
+
 			/* 	width of menu list (non-toggled) */
-			
+
 			var $width = 0;
 				$(this).find('ul li').each(function() {
 					$width += $(this).outerWidth();
 				});
-				
+
 			// if modern browser
-			
+
+/*
 			if ($.support.leadingWhitespace) {
 				$(this).css('max-width' , $width*1.05+'px');
 			}
-			// 
+			//
 			else {
 				$(this).css('width' , $width*1.05+'px');
 			}
-		
+*/
 	 	});
 }
 function getMobileMenu() {
 
 	/* 	build toggled dropdown menu list */
-	
-	$('.rmm').each(function() {	
+
+	$('.rmm').each(function() {
 				var menutitle = $(this).attr("data-menu-title");
 				if ( menutitle == "" ) {
 					menutitle = "Menu";
@@ -67,12 +68,15 @@ function getMobileMenu() {
 }
 
 function adaptMenu() {
-	
+
 	/* 	toggle menu on resize */
-	
+
 	$('.rmm').each(function() {
 			var $width = $(this).css('max-width');
-			$width = $width.replace('px', ''); 
+			$width = $width.replace('px', '');
+			$(this).children('.rmm-main-list').hide(0);
+			$(this).children('.rmm-toggled').show(0);
+			/*
 			if ( $(this).parent().width() < $width*1.05 ) {
 				$(this).children('.rmm-main-list').hide(0);
 				$(this).children('.rmm-toggled').show(0);
@@ -81,8 +85,9 @@ function adaptMenu() {
 				$(this).children('.rmm-main-list').show(0);
 				$(this).children('.rmm-toggled').hide(0);
 			}
+			*/
 		});
-		
+
 }
 
 $(function() {
@@ -90,9 +95,9 @@ $(function() {
 	 responsiveMobileMenu();
 	 getMobileMenu();
 	 adaptMenu();
-	 
+
 	 /* slide down mobile menu on click */
-	 
+
 	 $('.rmm-toggled, .rmm-toggled .rmm-button').click(function(){
 	 	if ( $(this).is(".rmm-closed")) {
 		 	 $(this).find('ul').stop().show(300);
@@ -102,8 +107,8 @@ $(function() {
 		 	$(this).find('ul').stop().hide(300);
 		 	 $(this).addClass("rmm-closed");
 	 	}
-		
-	});	
+
+	});
 
 });
 	/* 	hide mobile menu on resize */

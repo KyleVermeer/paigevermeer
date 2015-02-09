@@ -1,3 +1,112 @@
 #all-content {
     width : 100%;
+    background-color: #FFF;
+    font-family: Lato;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #ADD8E6;
+}
+
+@headerFooterColor: #ADD8E6;
+
+@footerMinHeight: 60px;
+@footerPaddingTop: @footerMinHeight * (1/5);
+@footerPaddingBottom: @footerPaddingTop;
+
+footer {
+    font-family: Lato;
+    background-color: @headerFooterColor;
+    min-height: @footerMinHeight;
+    padding-top: @footerPaddingTop;
+    padding-bottom: @footerPaddingBottom;
+}
+
+@social-media-links-width: 200px;
+
+#social-media-links {
+    display: block;
+    width: @social-media-links-width;
+    margin: auto;
+    text-align: center;
+}
+
+@signature-width: 150px;
+@signature-margin-top: 10px;
+@signature-font-color: #FFFFFF;
+@signature-font-size: 16px;
+
+div#signature {
+    /*width: @signature-width;*/
+    text-align: center;
+    margin: auto;
+    margin-top: @signature-margin-top;
+    font-size: @signature-font-size;
+    color: @signature-font-color;
+    text-shadow:1px 1px 1px #333333;
+}
+
+.space-holder {
+    clear:both;
+}
+
+.inline-link {
+    color: #009bff;
+}
+
+@header-label-background-color: #ADD8E6;
+@header-height: 60px;
+header {
+    width : 100%;
+    background-color: @header-label-background-color;
+    height: @header-height;
+}
+
+.body-text {
+    font-family: Lato, 'sans-seriff';
+    font-weight: 300;
+    color: #565656;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 5%;
+}
+
+.body-text p {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 4%;
+}
+
+.body-text h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6em;
+    padding-bottom: 3%;
+}
+
+.section {
+    padding-bottom: 7%;
+    padding-top: 3%;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+p.small-text {
+    line-height: 1.2em;
+    font-size: 1.15em;
+}
+
+#main-body {
+    padding-bottom: 4%;
 }

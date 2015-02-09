@@ -84,7 +84,7 @@ License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
 	padding:8px 30px 8px 30px;
 	margin:0px -3px 0px -3px;
 	font-size:15px;
-	text-shadow:1px 1px 1px #333333;
+	/*text-shadow:1px 1px 1px #333333;*/
 	background-color:#444444;
 	border-left:1px solid #555555;
 }
@@ -102,6 +102,7 @@ License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
 	background-image:url('../rmm-img/graphite-menu-bg.png');
 	background-repeat:repeat-x;
 	border-radius:6px;
+	border-bottom:1px solid #8DB8C6;
 }
 .rmm.graphite .rmm-toggled-title {
 	font-family: 'Petit Formal Script', cursive;
@@ -134,7 +135,11 @@ License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
 	padding:10px 0px 10px 0px;
 	border-bottom:1px solid #8DB8C6;
 	/*border-top:1px solid #8DB8C6;*/
-	text-shadow:1px 1px 1px #222222;
+	text-shadow:1px 1px 1px #333333;
+}
+
+.rmm.graphite .rmm-toggled ul li a:hover {
+	background-color: #7DA8B6;
 }
 .rmm.graphite .rmm-toggled ul li a:active {
 	background-color:#444444;
